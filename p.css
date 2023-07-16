@@ -1,0 +1,253 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    /* background-color: #dde8e9; */
+    width: 100%;
+    height: 2000px;
+}
+/* -----------------------------------Navigation bar------------------------------------------ */
+#navbar{
+    display: flex;
+    align-items: center;
+    /* position: sticky; */
+    top: 0px;
+    z-index: +1;
+}
+
+#logo img{
+    height: 100px;
+    margin: 25px 250px;
+}
+#navbar ul{
+    display: flex;
+    /* align-: flex-end; */
+    width: 100%;    
+    padding: 10px 250px;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+    align-items: flex-end;
+
+}
+#navbar ul li a{
+    color: #4FA095;
+    display: block;
+    text-decoration: none;
+    margin: 25px;
+    align-items: flex-end;
+}
+#navbar ul li a:hover{
+    color: #032521;
+    text-decoration: underline;
+}
+/* -----------------------------------------------About Section--------------------------------------------- */
+#About{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 200px;
+    position: relative;
+    top: 20px;
+}
+#About h1{
+    color: #4FA095;
+    font-size: 100px;
+    font-weight: 100;
+    /* font-family: 'Kaushan Script', cursive; */
+    font-family: 'Tangerine', cursive;
+
+
+
+}
+#About p{
+    color: #4FA095;
+    position: relative;
+    top: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+
+
+}
+#About::before{
+    content: "";
+    position: absolute;
+    height: 1062px;
+    width: 100%;
+    /* background-image: url('https://images.pexels.com/photos/6847584/pexels-photo-6847584.jpeg?auto=compress&cs=tinysrgb&w=600'); */
+    background-color:#E0EBE8 ;
+    z-index: -1;
+}
+#section.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    /* margin: 10px 500px; */
+    justify-items: center;
+    
+}
+.image img{
+    height: 350px;
+    /* margin: 10px 450px; */
+    position: relative;
+    top: 124px;
+    left: 430px;
+    z-index: -1;
+}
+/* -----------------------------------------Hello -------------------------------------------*/
+#AboutMe{
+    margin: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#AboutMe img{
+    height: 144px;
+}
+#AboutMe p{
+    position: relative;
+    top: 80px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #07302b;
+}
+#AboutMe .h-secondry{
+   color: #4FA095;
+   font-family: 'Ubuntu', sans-serif;
+   position: relative;
+   top: 30px;
+   font-size: 40px;
+   font-weight: lighter;
+}
+#AboutMe .MySkills{
+    position: relative;
+    top: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+#skill{
+    display: flex;
+    flex-direction: column;
+    /* width: 600px; */
+    align-items: center;
+    position: relative;
+    /* margin-top: 100px; */
+}
+#skill .content{
+    display: flex;
+    position: relative;
+    top: 50px;
+   margin-top: 100px;
+}
+
+#skill img{
+    height: 150px;
+    position: relative;
+    top: 13px;
+    border-radius: 10px;
+}
+#skill .content .container{
+    position: relative;
+    left: 15px;
+    top: 0px;
+    width: 450px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+#skill .content .container p{
+    width: 410px;
+
+}
+#bottom{
+    position: relative;
+    top: 200px;
+    /* width: 410px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+#bottom .container{
+    width: 600px;
+}
+#bottom .gap{
+    margin-top: 20px;
+}
+footer{
+    height: 170px;
+    background-color: #a9d0cb;
+    position: relative;
+    top: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+footer .link .item{
+    margin:  10px;
+    /* padding-left: 5px; */
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #4FA095;;
+}
+footer .link .item:hover{
+    color: white;
+}
+footer .link{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+footer .end{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: lighter;
+}
+/* -----------------------CommonCSS------------------------------------------------------------------------------- */
+.h-secondry{
+    color: #4FA095;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    font-weight: lighter;
+
+}
+.h-secondry1{
+    color: #4FA095;
+    font-size: 25px;
+    font-family: sans-serif;
+    margin: 8px;
+    font-weight: lighter;
+}
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    color: #07302b;
+    margin: 10px;
+    line-height: 30px;
+}
+.btn{
+    height: 50px;
+    width: 140px;
+    background-color: #7dc7bd;
+    border: none;
+    font-family: sans-serif;
+    color: white;
+    border-radius: 7px;
+    /* font-weight: bold; */
+    font-size: 16px;
+}
+.btn:hover{
+    background-color: rgb(71, 193, 193);
+    cursor: pointer;
+}
+/* -----------------------CommonCSS------------------------------------------------------------------------------- */
+
